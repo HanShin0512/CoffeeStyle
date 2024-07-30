@@ -552,7 +552,7 @@ footer .heading{
 }
 @media screen and (max-width: 768px) {
     /* navbar */
-    /* Display the menu icon */
+    
     header .menu-icon {
         display: block;
     }
@@ -563,7 +563,7 @@ footer .heading{
         right: 0;
         background: #eee;
         border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Initially hidden */
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); 
         text-align: center;
         transition: clip-path 0.3s ease-out;
         display: flex;
@@ -685,7 +685,7 @@ footer .heading{
         gap: 2rem;
     }
     footer p {
-        font-size: 0.9rem; /* Make text smaller */
+        font-size: 0.9rem; 
     }
     /* footer */
 }
@@ -758,23 +758,26 @@ footer .heading{
         width: 50px;
     }
     .coffee-magazine p {
-        font-size: 12px; /* or 13px, depending on your design */
+        font-size: 12px; 
     }
     .coffee-magazine .image-container .small-pic img{
-        width: 90%; /* Adjust width for better fit on very small screens */
+        width: 90%; 
     }
     .coffee-magazine .image-container .big-pic {
-        width: 50%; /* Adjust width for better fit on very small screens */
+        width: 50%; 
     }
     /* coffee magazine */
     
     /* parallex */
     .parallax-container {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        background-attachment: scroll; 
+        height: 480px; 
+        margin-top: 1rem; 
+        margin-bottom: 1rem;
     }
+
     .parallax-container .reveal {
-        height: 200px; /* Further adjustment for mobile */
+        height: 480px; 
     }
     /* parallex */
 
@@ -809,10 +812,10 @@ footer .heading{
         gap: 2rem;
     }
     footer p {
-        font-size: 0.8rem; /* Further reduce text size */
+        font-size: 0.8rem; 
     }
     footer .heading {
-        font-size: 1rem; /* Adjust heading size */
+        font-size: 1rem; 
     }
     /* footer */
 }
