@@ -6,6 +6,7 @@
 }
 body{
     margin: 0;
+    overflow-x: hidden;
 }
 p{
     text-align: center;
@@ -550,37 +551,43 @@ footer .heading{
     /* subscribe */
 }
 @media screen and (max-width: 768px) {
-   
     /* navbar */
-    header .menu-icon{
+    /* Display the menu icon */
+    header .menu-icon {
         display: block;
-    }
-    #menu-toggle:checked ~ .menu-icon{
-        transform: rotate(90deg);
     }
     header nav{
-        position:absolute; /*stacked*/
-        top: 100%;left: 0;right: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
         background: #eee;
-        border-top: .1rem solid rgba(0,0,0,.1);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        display: block;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Initially hidden */
         text-align: center;
-    } 
-    header nav a{
-        margin: 1rem;
-        padding: 1rem;
-        background: #fff;
-        border: .1rem solid rgba(0,0,0,.1);
-        display: block;
-        border-radius: .5rem;
+        transition: clip-path 0.3s ease-out;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 0;
     }
-    header nav .bx-shopping-bag{
-        margin: 1rem;
+    header nav a{
+        margin: 0.5rem;
         padding: 1rem;
         background: #fff;
         border: .1rem solid rgba(0,0,0,.1);
         display: block;
+        width: 80%;
+        box-sizing: border-box;
+        border-radius: 1.2rem;
+    }
+    /* Show nav when checked */
+    #menu-toggle:checked ~ nav {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    /* Rotate the menu icon when checked */
+    #menu-toggle:checked ~ .menu-icon {
+        transform: rotate(90deg);
     }
     /* navbar */
 
@@ -733,7 +740,7 @@ footer .heading{
         padding: 0.2rem;
     }
     .featured-mugs  .title, .more-products .title {
-        width: 53%;
+        width: 63%;
         padding: 1rem;
     }
     .featured-mugs .title::before, .featured-mugs .title::after, 
@@ -744,11 +751,20 @@ footer .heading{
 
     /* coffee magazine */
     .coffee-magazine .title {
-        width: 88%;
+        width: 60%;
         padding: 1rem;
+    }
+    .coffee-magazine .title::before, .coffee-magazine .title::after {
+        width: 50px;
     }
     .coffee-magazine p {
         font-size: 12px; /* or 13px, depending on your design */
+    }
+    .coffee-magazine .image-container .small-pic img{
+        width: 90%; /* Adjust width for better fit on very small screens */
+    }
+    .coffee-magazine .image-container .big-pic {
+        width: 50%; /* Adjust width for better fit on very small screens */
     }
     /* coffee magazine */
     
@@ -764,7 +780,7 @@ footer .heading{
 
     /* articles */
     .article-container .title {
-        width: 60%;
+        width: 80%;
     }
     /* articles */
 
