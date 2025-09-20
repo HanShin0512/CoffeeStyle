@@ -1,0 +1,995 @@
+:root {
+  --coffee: rgb(174, 107, 25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  font-size: 18px;
+  text-align: center;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+a {
+  display: inline-block;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.l-inner {
+  width: 95%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 16px;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, .1);
+  z-index: 1;
+}
+
+.logo {
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: gray;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--coffee);
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: black;
+}
+
+header #menu-toggle {
+  display: none;
+}
+
+header .menu-icon {
+  font-size: 24px;
+  color: #333;
+  border-radius: 8px;
+  padding: 8px 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/* header */
+
+/* home */
+.home .l-inner {
+  background: url(../images/background-header.jpeg) no-repeat center/cover;
+  margin: 0 auto;
+}
+
+.home .text-container {
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  padding: 100px 0;
+}
+
+.home .text-container h2 {
+  font-size: 56px;
+}
+
+.home .text-container p {
+  padding: 40px 0;
+}
+
+.home a {
+  padding: 24px;
+  background-color: white;
+  color: black;
+  border: none;
+  text-decoration: none;
+}
+
+.home a:hover {
+  cursor: pointer;
+  background-color: rgb(236, 235, 235);
+  transition: background-color 0.3s ease;
+}
+
+/* home */
+
+/* about */
+.about {
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.about h3 {
+  font-size: 24px;
+  padding: 85px 0 45px;
+}
+
+.about p {
+  color: gray;
+  padding-bottom: 48px;
+}
+
+/* about */
+
+/* featured and more products */
+.featured-mugs .title,
+.more-products .title {
+  color: gray;
+  position: relative;
+  margin: 0 auto;
+  padding: 48px 0;
+  width: 27%;
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  left: 0;
+  top: 50%;
+  background-color: var(--coffee);
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  right: 0;
+  top: 50%;
+  background-color: var(--coffee);
+}
+
+.product-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding: 48px 0;
+  flex-wrap: wrap;
+}
+
+.product-container div {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+}
+
+.product-container div.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.product-container img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.product-container img:hover {
+  cursor: pointer;
+}
+
+.explore-products {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  background-color: white;
+  border: none;
+  height: 50px;
+  font-size: medium;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+.explore-products:hover {
+  cursor: pointer;
+  background-color: rgb(236, 235, 235);
+}
+
+.name {
+  font-size: 24px;
+}
+
+.price {
+  color: gray;
+}
+
+.new-price {
+  color: var(--coffee);
+  font-size: 20px;
+}
+
+.old-price {
+  margin-left: 8px;
+  color: gray;
+  font-size: 16px;
+}
+
+.discount {
+  position: absolute;
+  background: white;
+  color: var(--coffee);
+  top: 0;
+  left: 75%;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* featured and more products */
+
+/* coffee magazine */
+.coffee-magazine {
+  padding-bottom: 48px;
+}
+
+.coffee-magazine .title {
+  color: gray;
+  position: relative;
+  margin: 0 auto;
+  padding: 48px 0;
+  width: 47%;
+}
+
+.coffee-magazine .offer {
+  display: flex;
+  gap: 44px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+}
+
+.coffee-magazine .offer.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.coffee-magazine .text-container {
+  width: 400px;
+}
+
+.coffee-magazine .text-container p {
+  text-align: left;
+}
+
+.coffee-magazine .text-container h4 {
+  font-weight: 700;
+  text-align: center;
+  padding: 16px 0 8px;
+}
+
+.coffee-magazine .offer .text-container button {
+  background-color: black;
+  color: white;
+  padding: 16px;
+}
+
+.coffee-magazine .offer .text-container button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.783);
+}
+
+.coffee-magazine .image-container {
+  display: flex;
+  gap: 16px;
+}
+
+.coffee-magazine .image-container .big-pic {
+  height: 316px;
+}
+
+.coffee-magazine .image-container .small-pic {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.coffee-magazine .image-container .first-small,
+.coffee-magazine .image-container .sec-small {
+  height: 150px;
+}
+
+/* coffee magazine */
+
+/* parallex */
+.sc-parallax {
+  background: url('../images/coffee-parallex.jpeg')no-repeat center / cover;
+  background-attachment: fixed;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.sc-parallax .reveal {
+  height: 340px;
+}
+
+/* parallex */
+
+/* articles */
+.article-container .title {
+  color: gray;
+  position: relative;
+  margin: 0 auto;
+  padding: 48px 0;
+  width: 40.5%;
+  margin-bottom: 2rem;
+}
+
+.article-container .articles {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+  flex-wrap: wrap;
+}
+
+.article-container .articles.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.first-article,
+.second-article,
+.third-article {
+  width: 300px;
+  position: relative;
+}
+
+.article-container .articles a:hover {
+  cursor: pointer;
+  color: var(--coffee);
+  transition: color 0.3s ease;
+}
+
+.readmore-container img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.readmore-container img:hover {
+  cursor: pointer;
+}
+
+.first-article .read-more,
+.second-article .read-more,
+.third-article .read-more {
+  left: 9%;
+}
+
+.read-more {
+  opacity: 0;
+  position: absolute;
+  bottom: 40%;
+  width: 250px;
+  background-color: white;
+  border: none;
+  height: 50px;
+  font-size: medium;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+.read-more:hover {
+  cursor: pointer;
+  background-color: rgb(236, 235, 235);
+}
+
+.article-container .article-title {
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 12px 0;
+}
+
+.article-container .sub-title {
+  text-align: left;
+  color: gray;
+  padding-bottom: 12px;
+}
+
+.article-container .date{
+  text-align: left;
+}
+/* articles */
+
+/* subscribe */
+.subscribe {
+  color: white;
+  text-align: center;
+  margin-top: 80px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+}
+
+.subscribe.loaded {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.subscribe .l-inner{
+  background-color: #000000;
+  padding: 64px 0;
+}
+
+.subscribe .title {
+  color: gray;
+  position: relative;
+  margin: 0 auto;
+  width: 39%;
+}
+
+.subscribe p {
+  font-size: 36px;
+  padding: 25px 0;
+}
+
+.subscribe #email-input {
+  width: 400px;
+  height: 49px;
+  background-color: black;
+  border: .1px solid rgb(45, 45, 45);
+  color: white;
+}
+
+.subscribe #email-input:hover {
+  border: .1px solid gray;
+  transition: border-color 0.4s ease;
+}
+
+.subscribe #sub-btn {
+  background-color: white;
+  padding: 16px;
+  border: none;
+}
+
+.subscribe #sub-btn:hover {
+  cursor: pointer;
+  background-color: rgb(236, 235, 235);
+  transition: background-color 0.3s ease;
+}
+
+.thank-you p {
+  font-size: 16px;
+  letter-spacing: 2.5px;
+}
+/* subscribe */
+
+/* footer */
+footer {
+  padding: 80px 0;
+  gap: 80px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+footer .l-inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  color: gray;
+}
+
+footer .foot-links{
+  display: flex;
+  gap: 50px;
+}
+
+footer .menu,
+footer .follow-us,
+footer .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+footer .heading {
+  font-size: 24px;
+  color: rgb(61, 57, 57);
+  padding-bottom: 15px;
+}
+
+footer a {
+  text-decoration: none;
+  color: gray;
+}
+
+footer a:hover {
+  color: var(--coffee);
+  transition: color 0.5s ease;
+}
+/* footer */
+
+/* make responsive */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+  .featured-mugs .title,
+  .more-products .title {
+    width: 25%;
+  }
+
+  .coffee-magazine .title {
+    width: 43%;
+  }
+
+  .article-container .title {
+    width: 38%;
+  }
+
+  .subscribe .title {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+
+  /* home */
+  .home .text-container {
+    font-size: 16px;
+    padding-block: 8rem;
+  }
+
+  .home h1 {
+    font-size: 48px;
+  }
+
+  /* home */
+
+  /* about */
+  .about {
+    width: 80%;
+    font-size: 1.3rem;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+
+  /* about */
+
+  /* products */
+  .product-container {
+    padding: 2rem;
+  }
+
+  .product-container img {
+    width: 300px;
+    height: 225px;
+  }
+
+  .name {
+    font-size: 1.3rem;
+  }
+
+  .new-price {
+    font-size: 18px;
+  }
+
+  .old-price {
+    font-size: 0.9rem;
+  }
+
+  .discount {
+    font-size: 18px;
+    padding: 0.4rem;
+  }
+
+  .featured-mugs .title,
+  .more-products .title {
+    width: 33%;
+  }
+
+  /* products */
+
+  /* coffee magazine */
+  .coffee-magazine .title {
+    width: 56%;
+  }
+
+  /* coffee magazine */
+
+  /* article */
+  .article-container .title {
+    width: 48%;
+  }
+
+  /* article */
+
+  /* subscribe */
+  .subscribe .title {
+    width: 60%;
+  }
+
+  /* subscribe */
+}
+
+@media screen and (max-width: 768px) {
+  /* navbar */
+
+  header .menu-icon {
+    display: block;
+  }
+
+  header nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #eee;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    text-align: center;
+    transition: clip-path 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  header nav a {
+    margin: 0.5rem;
+    padding: 16px;
+    background: #fff;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    display: block;
+    width: 80%;
+    box-sizing: border-box;
+    border-radius: 1.2rem;
+  }
+
+  /* Show nav when checked */
+  #menu-toggle:checked~nav {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  /* Rotate the menu icon when checked */
+  #menu-toggle:checked~.menu-icon {
+    transform: rotate(90deg);
+  }
+
+  /* navbar */
+
+  /* home */
+  .home .container {
+    width: 95vw;
+  }
+
+  .home .text-container {
+    font-size: 14px;
+    padding-block: 6rem;
+  }
+
+  .home h1 {
+    font-size: 2.5rem;
+  }
+
+  .home a {
+    padding: 16px;
+  }
+
+  /* home */
+
+  /* about */
+  .about {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+
+  .about p {
+    font-size: 15px;
+  }
+
+  /* about */
+
+  /* products */
+  .product-container {
+    padding: 24px;
+  }
+
+  .product-container img {
+    width: 250px;
+    height: 188px;
+  }
+
+  .name {
+    font-size: 1.2rem;
+  }
+
+  .new-price {
+    font-size: 16px;
+  }
+
+  .old-price {
+    font-size: 0.8rem;
+  }
+
+  .discount {
+    font-size: 16px;
+    padding: 0.3rem;
+  }
+
+  .featured-mugs .title,
+  .more-products .title {
+    width: 35%;
+    padding: 24px;
+  }
+
+  .title::before,
+  .title::after {
+    width: 60px;
+  }
+
+  /* products */
+
+  /* coffee magazine */
+  .coffee-magazine .title {
+    width: 68%;
+    padding: 2rem
+  }
+
+  /* coffee magazine */
+
+  /* articles */
+  .article-container .title {
+    width: 50%;
+  }
+
+  .article-container .articles img {
+    height: 200px;
+    width: 300px;
+  }
+
+  /* articles */
+
+  /* subscribe */
+  .subscribe {
+    padding: 2rem;
+  }
+
+  .subscribe .title {
+    width: 70%;
+  }
+
+  .subscribe h1 {
+    font-size: 2rem;
+  }
+
+  .subscribe .email-input {
+    width: 200px;
+  }
+
+  /* subscribe */
+
+  /* footer */
+  footer {
+    padding: 48px;
+    gap: 2rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+
+  /* footer */
+}
+
+@media (max-width: 480px) {
+
+  /* home */
+  .home .text-container {
+    font-size: 12px;
+    padding-block: 4rem;
+  }
+
+  .home h1 {
+    font-size: 2rem;
+  }
+
+  .home a {
+    padding: 0.8rem;
+  }
+
+  /* home */
+
+  /* about */
+  .about {
+    width: 95%;
+    padding: 2rem;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .about .more-about-us {
+    font-size: 16px;
+  }
+
+  /* about */
+
+  /* products */
+  .product-container {
+    padding: 16px;
+  }
+
+  .product-container img {
+    width: 200px;
+    height: 150px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .new-price {
+    font-size: 14px;
+  }
+
+  .old-price {
+    font-size: 0.7rem;
+  }
+
+  .discount {
+    font-size: 14px;
+    padding: 0.2rem;
+  }
+
+  .featured-mugs .title,
+  .more-products .title {
+    width: 63%;
+    padding: 16px;
+  }
+
+  .featured-mugs .title::before,
+  .featured-mugs .title::after,
+  .more-products .title::before,
+  .more-products .title::after {
+    width: 50px;
+  }
+
+  /* products */
+
+  /* coffee magazine */
+  .coffee-magazine .title {
+    width: 60%;
+    padding: 16px;
+  }
+
+  .coffee-magazine .title::before,
+  .coffee-magazine .title::after {
+    width: 50px;
+  }
+
+  .coffee-magazine p {
+    font-size: 12px;
+  }
+
+  .coffee-magazine .image-container .small-pic img {
+    width: 90%;
+  }
+
+  .coffee-magazine .image-container .big-pic {
+    width: 50%;
+  }
+
+  /* coffee magazine */
+
+  /* parallex */
+  .parallax-container {
+    background-attachment: scroll;
+    height: 480px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .parallax-container .reveal {
+    height: 480px;
+  }
+
+  /* parallex */
+
+  /* articles */
+  .article-container .title {
+    width: 80%;
+  }
+
+  /* articles */
+
+  /* subscribe */
+  .subscribe {
+    padding: 24px;
+  }
+
+  .subscribe .title {
+    width: 60%;
+  }
+
+  .subscribe h1 {
+    font-size: 1.8rem;
+  }
+
+  .subscribe .email-input {
+    width: 100%;
+  }
+
+  .subscribe .sub-btn {
+    padding: 16px;
+    color: black;
+  }
+
+  /* subscribe */
+
+  /* footer */
+  footer {
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  footer .heading {
+    font-size: 16px;
+  }
+
+  /* footer */
+}

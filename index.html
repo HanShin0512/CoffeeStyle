@@ -1,267 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoffeeStyle.</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoffeeStyle.</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="script.js"></script>
 </head>
+
 <body>
-    <!-- header -->
+
+  <div class="wrapper">
+
     <header>
-        <a href="#" class="logo">CoffeeStyle</a>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        <nav>
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#products">OUR PRODUCTS</a>
-            <a href="#blog">BLOG</a>
-            <a href="#contact">CONTACT</a>
-            <a href="#cart" class='bx bx-shopping-bag'>CART</a>
-        </nav>
+      <h1> <a href="#" class="logo">CoffeeStyle.</a> </h1>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#products">OUR PRODUCTS</a>
+        <a href="#blog">BLOG</a>
+        <a href="#contact">CONTACT</a>
+        <a href="#cart" class='bx bx-shopping-bag'>CART</a>
+      </nav>
     </header>
     <!-- header -->
 
-    <!-- home -->
-    <div class="home" id="home">
-        <div class="container">
-            <div class="text-container">
-                <p>BEST PLACE TO BUY MUGS</p>
-                <h1>Coffee Mugs</h1>
-                <p>Discover Our Unique and Stylish Coffee Mugs Perfect for Every Sip!</p>
-                <br>
-                <a href="#products">EXPLORE OUR PRODUCTS</a>
-            </div>
+    <section class="home" id="home">
+      <div class="l-inner">
+        <div class="text-container">
+          <p>BEST PLACE TO BUY MUGS</p>
+          <h2>Coffee Mugs</h2>
+          <p>Discover Our Unique and Stylish Coffee Mugs Perfect for Every Sip!</p>
+          <a href="#products">EXPLORE OUR PRODUCTS</a>
         </div>
-    </div>
+      </div>
+    </section>
     <!-- home -->
 
-    <!-- about -->
-    <div class="about" id="about">
+    <section class="about" id="about">
+      <div class="l-inner">
         <h3>Where Every Mug Holds a Tale, Every Sip Unveils a Journey.</h3>
         <p>
-            Welcome to CoffeeStyle, your go-to destination for unique and stylish 
-            mugs! At Mug Haven, we're passionate about providing high-quality, 
-            beautifully crafted mugs that enhance your coffee or tea experience. 
-            From sleek designs to personalized creations, we have something for 
-            everyone. Join us as we celebrate the joy of sipping in style!
+          Welcome to CoffeeStyle, your go-to destination for unique and stylish
+          mugs! At Mug Haven, we're passionate about providing high-quality,
+          beautifully crafted mugs that enhance your coffee or tea experience.
+          From sleek designs to personalized creations, we have something for
+          everyone. Join us as we celebrate the joy of sipping in style!
         </p>
-    </div>
+      </div>
+    </section>
     <!-- about -->
 
-    <!-- featured mugs -->
-    <div class="featured-mugs" id="products">
-        <p class="title">FEATURED MUGS</p>
+    <section class="featured-mugs" id="products">
+      <div class="l-inner">
+        <h3 class="title">FEATURED MUGS</h3>
         <div class="product-container">
-            <div class="curves">
-                <div class="explore-container">
-                    <img src="../images/woman-body-mug.jpeg" alt="White ceramic cup inspired by women curves">
-                    <button class="explore-products">Explore Mug</button>
-                </div>
-                <p class="name">Elegant Curve Cup</p>
-                <p class="price">$ 99.00 USD</p>
+          <div class="curves">
+            <div class="explore-container">
+              <img src="../images/woman-body-mug.jpeg" alt="White ceramic cup inspired by women curves">
+              <button class="explore-products">Explore Mug</button>
             </div>
-            
-            <div class="beehive-mug">
-                <div class="explore-container">
-                    <img src="../images/honey-comb-mug.jpeg" alt="Ceramic mug with honey comb pattern">
-                    <button class="explore-products">Explore Mug</button>
-                </div>
-                <p class="discount">On Sale.</p>
-                <p class="name">Beehive Base Mug</p>
-                <p class="new-price">$ 50.00 USD <s class="old-price">$ 69.00 USD</s></p>
+            <p class="name">Elegant Curve Cup</p>
+            <p class="price">$ 99.00 USD</p>
+          </div>
+
+          <div class="beehive-mug">
+            <div class="explore-container">
+              <img src="../images/honey-comb-mug.jpeg" alt="Ceramic mug with honey comb pattern">
+              <button class="explore-products">Explore Mug</button>
             </div>
+            <p class="discount">On Sale.</p>
+            <p class="name">Beehive Base Mug</p>
+            <p class="new-price">$ 50.00 USD <s class="old-price">$ 69.00 USD</s></p>
+          </div>
         </div>
-    </div>
+      </div>
+
+    </section>
     <!-- featured mugs -->
 
-    <!-- more products -->
-    <div class="more-products">
-        <p class="title">MORE PRODUCTS</p>
+    <section class="more-products">
+      <div class="l-inner">
+        <h3 class="title">MORE PRODUCTS</h3>
         <div class="product-container">
-            <div class="tea-cup">
-                <div class="explore-container">
-                    <img src="../images/tea-cup.jpeg" alt="Tea cup with flower pattern">
-                    <button class="explore-products">Explore Mug</button>
-                </div>
-                <p class="discount">On Sale.</p>
-                <p class="name">Grandma's Tea Cup</p>
-                <p class="new-price">$ 25.00 USD <s class="old-price">$ 37.00 USD</s></p>
+          <div class="tea-cup">
+            <div class="explore-container">
+              <img src="../images/tea-cup.jpeg" alt="Tea cup with flower pattern">
+              <button class="explore-products">Explore Mug</button>
             </div>
-            <div class="black-mug">
-                <div class="explore-container">
-                    <img src="../images/black-mug.jpeg" alt="Black ceramic mug">
-                    <button class="explore-products">Explore Mug</button>
-                </div>
-                <p class="discount">On Sale.</p>
-                <p class="name">Black Mug</p>
-                <p class="new-price">$ 15.00 USD <s class="old-price">$ 29.00 USD</s></p>
+            <p class="discount">On Sale.</p>
+            <p class="name">Grandma's Tea Cup</p>
+            <p class="new-price">$ 25.00 USD <s class="old-price">$ 37.00 USD</s></p>
+          </div>
+          <div class="black-mug">
+            <div class="explore-container">
+              <img src="../images/black-mug.jpeg" alt="Black ceramic mug">
+              <button class="explore-products">Explore Mug</button>
             </div>
-            <div class="ceramic">
-                <div class="explore-container">
-                    <img src="../images/ceramic-mug.jpeg" alt="White ceramic cup inspired by women curves">
-                    <button class="explore-products">Explore Mug</button>
-                </div>
-                <p class="name">Ceramic Mug</p>
-                <p class="price">$ 19.00 USD</p>
+            <p class="discount">On Sale.</p>
+            <p class="name">Black Mug</p>
+            <p class="new-price">$ 15.00 USD <s class="old-price">$ 29.00 USD</s></p>
+          </div>
+          <div class="ceramic">
+            <div class="explore-container">
+              <img src="../images/ceramic-mug.jpeg" alt="White ceramic cup inspired by women curves">
+              <button class="explore-products">Explore Mug</button>
             </div>
-            <div class="clear-mug">
-                <div class="explore-container">
-                    <img src="../images/clear-mug-with-pattern-plating.jpeg" alt="Clear mug with red patterned saucer">
-                    <button class="explore-products">Explore Mug</button>
-                </div>
-                <p class="name">Clear Cup With Patterned Saucer</p>
-                <p class="price">$ 25.00 USD</p>
+            <p class="name">Ceramic Mug</p>
+            <p class="price">$ 19.00 USD</p>
+          </div>
+          <div class="clear-mug">
+            <div class="explore-container">
+              <img src="../images/clear-mug-with-pattern-plating.jpeg" alt="Clear mug with red patterned saucer">
+              <button class="explore-products">Explore Mug</button>
             </div>
-            <div class="pink-cup">
-                <div class="explore-container">
-                    <img src="../images/pink-roses-cup.jpeg" alt="Pink cup with roses plate">
-                    <button class="explore-products">Explore Mug</button>
-                </div>
-                <p class="name">Pink Petal Tea Cup</p>
-                <p class="price">$ 46.00 USD</p>
+            <p class="name">Clear Cup With Patterned Saucer</p>
+            <p class="price">$ 25.00 USD</p>
+          </div>
+          <div class="pink-cup">
+            <div class="explore-container">
+              <img src="../images/pink-roses-cup.jpeg" alt="Pink cup with roses plate">
+              <button class="explore-products">Explore Mug</button>
             </div>
-            <div class="bouquet-cup">
-                <div class="explore-container">
-                    <img src="../images/bouquet-cup.jpeg" alt="White cup with bouquet painted on it">
-                    <button class="explore-products">Explore Mug</button>
-                </div>
-                <p class="name">Blossom Bouquet Cup</p>
-                <p class="price">$ 34.00 USD</p>
+            <p class="name">Pink Petal Tea Cup</p>
+            <p class="price">$ 46.00 USD</p>
+          </div>
+          <div class="bouquet-cup">
+            <div class="explore-container">
+              <img src="../images/bouquet-cup.jpeg" alt="White cup with bouquet painted on it">
+              <button class="explore-products">Explore Mug</button>
             </div>
-            <div class="pumpkin-cup">
-                <div class="explore-container">
-                    <img src="../images/pumpkin-cup.jpeg" alt="White cup with pumpkin feature">
-                    <button class="explore-products">Explore Mug</button>
-                </div>
-                <p class="name">Cinderella's Cup</p>
-                <p class="price">$ 20.00 USD</p>
+            <p class="name">Blossom Bouquet Cup</p>
+            <p class="price">$ 34.00 USD</p>
+          </div>
+          <div class="pumpkin-cup">
+            <div class="explore-container">
+              <img src="../images/pumpkin-cup.jpeg" alt="White cup with pumpkin feature">
+              <button class="explore-products">Explore Mug</button>
             </div>
-            <div class="gold-saucer">
-                <div class="explore-container">
-                    <img src="../images/gold-saucer.jpeg" alt="White cup with gold ring saucer">
-                    <button class="explore-products">Explore Mug</button>
-                </div>
-                <p class="name">Gold Ring</p>
-                <p class="price">$ 25.00 USD</p>
+            <p class="name">Cinderella's Cup</p>
+            <p class="price">$ 20.00 USD</p>
+          </div>
+          <div class="gold-saucer">
+            <div class="explore-container">
+              <img src="../images/gold-saucer.jpeg" alt="White cup with gold ring saucer">
+              <button class="explore-products">Explore Mug</button>
             </div>
-            <div class="love-cup">
-                <div class="explore-container">
-                    <img src="../images/love-cup.jpeg" alt="White cup with hearts">
-                    <button class="explore-products">Explore Mug</button>
-                </div>
-                <p class="name">Made with Love</p>
-                <p class="price">$ 29.00 USD</p>
+            <p class="name">Gold Ring</p>
+            <p class="price">$ 25.00 USD</p>
+          </div>
+          <div class="love-cup">
+            <div class="explore-container">
+              <img src="../images/love-cup.jpeg" alt="White cup with hearts">
+              <button class="explore-products">Explore Mug</button>
             </div>
+            <p class="name">Made with Love</p>
+            <p class="price">$ 29.00 USD</p>
+          </div>
         </div>
-    </div>
+      </div>
+
+    </section>
     <!-- more products -->
 
-    <!-- coffee magazine -->
-    <div class="coffee-magazine">
-        <p class="title">BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE</p>
+    <section class="coffee-magazine">
+      <div class="l-inner">
+        <h3 class="title">BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE</h3>
         <div class="offer">
-            <div class="text-container">
-                <p>PREMIUM OFFER</p>
-                <h1>Get our Coffee Magazine</h1>
-                <p>Your one-stop source for all things coffee. Discover the latest trends, brewing tips, and stories from around the world.</p>
-                <button>START SHOPPING</button>
+          <div class="text-container">
+            <p>PREMIUM OFFER</p>
+            <h4>Get our Coffee Magazine</h4>
+            <p>Your one-stop source for all things coffee. Discover the latest trends, brewing tips, and stories from around the world.</p>
+            <button>START SHOPPING</button>
+          </div>
+          <div class="image-container">
+            <img src="../images/big-image.jpeg" alt="Girl reading magazine" class="big-pic">
+            <div class="small-pic">
+              <img src="../images/first-small.jpeg" alt="coffee and grapes on magazine" class="first-small">
+              <img src="../images/second-small.jpeg" alt="black and white coffee and magazine" class="sec-small">
             </div>
-            <div class="image-container">
-                <img src="../images/big-image.jpeg" alt="Girl reading magazine" class="big-pic">
-                <div class="small-pic">
-                    <img src="../images/first-small.jpeg" alt="coffee and grapes on magazine" class="first-small">
-                    <img src="../images/second-small.jpeg" alt="black and white coffee and magazine" class="sec-small">
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
+      </div>
+
+    </section>
     <!-- coffee magazine -->
 
-    <!-- parallex -->
-    <div class="parallax-container">
-        <div class="reveal"></div>
-    </div>    
+    <section class="sc-parallax">
+      <div class="reveal"></div>
+    </section>
     <!-- parallex -->
 
-    <!-- article -->
-    <div class="article-container" id="blog">
-        <p class="title">BEHIND THE MUGS, LIFESTYLE STORIES</p>
+    <section class="article-container" id="blog">
+      <div class="l-inner">
+        <h3 class="title">BEHIND THE MUGS, LIFESTYLE STORIES</h3>
         <div class="articles">
-            <div class="first-article">
-                <div class="readmore-container">
-                    <img src="../images/guy-drink-coffee.jpeg" alt="Man drinking coffee">
-                    <button class="read-more">Read More</button>
-                </div>
-                <a href="#article" class="article-title">Health Check: Why do I get a headache when I haven't had my coffee?</a>
-                <p class="sub-title">Brewed aromas tantalize your senses, yet the absence of caffeine can cloud your clarity.</p>
-                <p class="date">OCTOBER 9, 2018</p>
+          <div class="first-article">
+            <div class="readmore-container">
+              <img src="../images/guy-drink-coffee.jpeg" alt="Man drinking coffee">
+              <button class="read-more">Read More</button>
             </div>
-            <div class="second-article">
-                <div class="readmore-container">
-                    <img src="../images/coffee-in-bed" alt="Coffee on tray in bed">
-                    <button class="read-more">Read More</button>
-                </div>
-                <a href="#article" class="article-title">How long does a cup of coffee keep you awake?</a>
-                <p class="sub-title">Unveiling the Enigmatic Duration of Coffee's Wakefulness Effect</p>
-                <p class="date">OCTOBER 9, 2018</p>
+            <a href="#article" class="article-title">Health Check: Why do I get a headache when I haven't had my coffee?</a>
+            <p class="sub-title">Brewed aromas tantalize your senses, yet the absence of caffeine can cloud your clarity.</p>
+            <p class="date">OCTOBER 9, 2018</p>
+          </div>
+          <div class="second-article">
+            <div class="readmore-container">
+              <img src="../images/coffee-in-bed" alt="Coffee on tray in bed">
+              <button class="read-more">Read More</button>
             </div>
-            <div class="third-article">
-                <div class="readmore-container">
-                    <img src="../images/coffee-with-stuff.jpeg" alt="Coffee in bed with books and other items">
-                    <button class="read-more">Read More</button>
-                </div>
-                <a href="#article" class="article-title">Recent research suggests that heavy coffee drinkers may reap health benefits.</a>
-                <p class="sub-title">Exploring the Healthful Impact of Coffee Consumption</p>
-                <p class="date">OCTOBER 9, 2018</p>
+            <a href="#article" class="article-title">How long does a cup of coffee keep you awake?</a>
+            <p class="sub-title">Unveiling the Enigmatic Duration of Coffee's Wakefulness Effect</p>
+            <p class="date">OCTOBER 9, 2018</p>
+          </div>
+          <div class="third-article">
+            <div class="readmore-container">
+              <img src="../images/coffee-with-stuff.jpeg" alt="Coffee in bed with books and other items">
+              <button class="read-more">Read More</button>
             </div>
+            <a href="#article" class="article-title">Recent research suggests that heavy coffee drinkers may reap health benefits.</a>
+            <p class="sub-title">Exploring the Healthful Impact of Coffee Consumption</p>
+            <p class="date">OCTOBER 9, 2018</p>
+          </div>
         </div>
-    </div>
+      </div>
+
+    </section>
     <!-- article -->
 
-    <!-- subscribe -->
-    <div class="subscribe" id="contact">
-        <p class="title">SIGN UP AND GET FREE COFFEE BAGS</p>
-        <h1>Coffee Updates</h1>
+    <section class="subscribe" id="contact">
+      <div class="l-inner">
+        <h3 class="title">SIGN UP AND GET FREE COFFEE BAGS</h3>
+        <p>Coffee Updates</p>
         <form id="subscribeForm">
-            <input type="text" placeholder="CUSTOMER@email.com" class="email-input">
-            <input type="submit" value="SUBSCRIBE" class="sub-btn">
+          <input id="email-input" type="email" placeholder="CUSTOMER@email.com">
+          <input id="sub-btn" type="submit" value="SUBSCRIBE">
         </form>
         <div class="thank-you" style="display: none;">
-            <p class='bx bxs-coffee-bean'> Thank you for your subscription!</p>
+          <p class='bx bxs-coffee-bean'> Thank you for your subscription!</p>
         </div>
-    </div>
+      </div>
+    </section>
     <!-- subscribe -->
 
-    <!-- footer -->
     <footer>
+      <div class="l-inner">
         <div class="company">
-            <p class="logo">CoffeeStyle.</p>
-            <p>CoffeeStyle Inc. © 1996</p>
+          <h5> <a href="#" class="logo"> CoffeeStyle. </a> </h5>
+          <p>CoffeeStyle Inc. © 1996</p>
         </div>
-        <div class="menu">
-            <p class="heading">Menu</p>
+        <div class="foot-links">
+          <div class="menu">
+            <h6 class="heading">Menu</h6>
             <a href="#home">HOME</a>
             <a href="#products">OUR PRODUCTS</a>
             <a href="#blog">BLOG</a>
             <a href="#about">ABOUT</a>
             <a href="#contact">CONTACT</a>
-        </div>
-        <div class="follow-us">
-            <p class="heading">FOLLOW US</p>
+          </div>
+          <div class="follow-us">
+            <h6 class="heading">FOLLOW US</h6>
             <a href="" class="instagram">Instagram</a>
             <a href="https://www.linkedin.com/in/thwin-han-shin-44b157334/" class="linked-in">LinkedIn</a>
-        </div>
-        <div class="contact-info">
-           <p class="heading">CONTACT INFO</p>
-            <p>+65 9022 7760</p>
+          </div>
+          <div class="contact-info">
+            <h6 class="heading">CONTACT INFO</h6>
+            <p>+959 1111 0000</p>
             <p>thwinhanshin123@gmail.com</p>
-            <p>Choa Chu Kang, Singapore, 689048</p>
+            <p>123 Street, Blud Heaven City, 01234</p>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- footer -->
+
+  </div>
+
 </body>
+
 </html>

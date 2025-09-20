@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function(){
         // Prevent default form submission behavior
         event.preventDefault();
         
-        document.querySelector(".sub-btn").value = "Loading..."
+        document.querySelector("#sub-btn").value = "Loading..."
 
         setTimeout(function() {
 
