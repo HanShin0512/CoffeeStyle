@@ -112,3 +112,12 @@ document.addEventListener('DOMContentLoaded', function(){
     //subscribe form ends
     
 });
+
+    //open ipad,sp navbar
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+
+    toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    nav.classList.toggle('show');
+    });
