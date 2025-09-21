@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function(){
     
             Container.addEventListener('mouseenter', () => {
                 image.style.filter = 'brightness(85%)';
-                button.style.bottom = '42%';
+                button.style.bottom = '39%';
                 button.style.opacity = '1';
             });
     

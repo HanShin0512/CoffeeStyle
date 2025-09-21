@@ -35,13 +35,13 @@ a {
   margin: 0 auto;
 }
 
-.ipad, 
-.sp{
+.ipad,
+.sp {
   display: none;
 }
 
 /* header */
-header{
+header {
   padding: 30px 0;
   width: 100%;
   background-color: white;
@@ -50,7 +50,7 @@ header{
   z-index: 1;
 }
 
-header .l-inner{
+header .l-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -221,11 +221,11 @@ nav a:hover {
   background-color: var(--coffee);
 }
 
-.title::before{
+.title::before {
   left: 100%;
 }
 
-.title::after{
+.title::after {
   right: 100%;
 }
 
@@ -294,7 +294,6 @@ nav a:hover {
 .old-price {
   margin-left: 8px;
   color: gray;
-  font-size: 16px;
 }
 
 .discount {
@@ -358,6 +357,7 @@ nav a:hover {
   background-color: black;
   color: white;
   padding: 16px;
+  border: transparent;
 }
 
 .coffee-magazine .offer .text-container button:hover {
@@ -465,9 +465,10 @@ nav a:hover {
   background-color: white;
   border: none;
   height: 50px;
-  font-size: medium;
+  font-size: 18px;
   font-family: sans-serif;
   letter-spacing: 2px;
+  transform: translateY(-39%);
 }
 
 .read-more:hover {
@@ -618,7 +619,7 @@ footer a:hover {
     max-width: 91.146vw;
   }
 
-  .ipad{
+  .ipad {
     display: block;
   }
 
@@ -705,7 +706,6 @@ footer a:hover {
   }
 
   .about p {
-    color: gray;
     padding-bottom: 6.25vw;
   }
 
@@ -718,9 +718,9 @@ footer a:hover {
   }
 
   .title::before,
-.title::after {
-  width: 13.021vw;
-}
+  .title::after {
+    width: 13.021vw;
+  }
 
   .product-container {
     gap: 3.125vw;
@@ -747,7 +747,6 @@ footer a:hover {
   }
 
   .new-price {
-    color: var(--coffee);
     font-size: 2.604vw;
   }
 
@@ -857,6 +856,7 @@ footer a:hover {
   .article-container .sub-title {
     padding-bottom: 1.563vw;
   }
+
   /* articles */
 
   /* subscribe */
@@ -887,6 +887,7 @@ footer a:hover {
     font-size: 2.083vw;
     letter-spacing: 0.326vw;
   }
+
   /* subscribe */
 
   /* footer */
@@ -910,8 +911,342 @@ footer a:hover {
     padding-bottom: 1.953vw;
   }
 
-  footer a{
+  footer a {
     font-size: 2.083vw;
   }
+
+  /* footer */
+}
+
+@media screen and (max-width: 639.9px) {
+  body {
+    font-size: 4.267vw;
+  }
+
+  .l-inner {
+    max-width: 104vw;
+  }
+
+  .sp {
+    display: block;
+  }
+
+  /* header */
+  header {
+    box-shadow: 0 2.134vw 4.266vw rgba(0, 0, 0, .1);
+  }
+
+  .logo {
+    font-size: 8vw;
+  }
+
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    top: 17.334vw;
+    left: 0;
+    padding: 13.333vw 0;
+    gap: 7.999vw;
+    transform: translateX(266.666vw);
+    transition: transform 0.7s ease;
+  }
+
+  nav.show ul {
+    transform: translateX(0);
+  }
+
+  nav a::after {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    width: 6.667vw;
+  }
+
+  .burger-icon,
+  .burger-icon::before,
+  .burger-icon::after {
+    height: 0.533vw;
+  }
+
+  .burger-icon::before {
+    top: -2.134vw;
+  }
+
+  .burger-icon::after {
+    bottom: -2.134vw;
+  }
+
+  /* header */
+
+  /* home */
+  .home .text-container {
+    line-height: 7.999vw;
+    padding: 26.667vw 0.8vw;
+  }
+
+  .home .text-container h2 {
+    font-size: 13.333vw;
+  }
+
+  .home .text-container p {
+    padding: 10.133vw 0;
+  }
+
+  .home a {
+    padding: 2.667vw;
+  }
+
+  /* home */
+
+  /* about */
+  .about {
+    width: 80vw;
+  }
+
+  .about h3 {
+    font-size: 6.4vw;
+    padding: 22.667vw 0 11.999vw;
+  }
+
+  .about p {
+    padding-bottom: 12.8vw;
+  }
+
+  /* about */
+
+  /* featured and more products */
+  .featured-mugs .title,
+  .more-products .title {
+    padding: 12.8vw 0;
+    width: 26.667vw;
+  }
+
+  .title::before,
+  .title::after {
+    width: 18.667vw;
+  }
+
+  .product-container {
+    gap: 6.4vw;
+    padding: 12.8vw 0;
+  }
+
+  .product-container div {
+    transform: translateY(13.333vw);
+  }
+
+  .product-container img {
+    width: 88.001vw;
+    height: 80.001vw;
+  }
+
+  .explore-products {
+    width: 80.001vw;
+    height: 13.333vw;
+    letter-spacing: 0.533vw;
+  }
+
+  .name {
+    font-size: 5.333vw;
+  }
+
+  .new-price {
+    font-size: 4.8vw;
+  }
+
+  .old-price {
+    margin-left: 2.134vw;
+    font-size: 4.267vw;
+  }
+
+  .discount {
+    padding: 2.134vw;
+    font-size: 5.333vw;
+    top: 1.333vw;
+    left: 71%;
+  }
+
+  /* featured and more products */
+
+  /* coffee magazine */
+  .coffee-magazine {
+    padding-bottom: 12.8vw;
+  }
+
+  .coffee-magazine .title {
+    padding: 13.333vw 0;
+    width: 41.333vw;
+  }
+
+  .coffee-magazine .offer {
+    margin-top: 9.333vw;
+    gap: 11.733vw;
+    transform: translateY(13.333vw);
+  }
+
+  .coffee-magazine .text-container {
+    width: 106.666vw;
+  }
+
+  .coffee-magazine .text-container h4 {
+    padding: 4.266vw 0 2.134vw;
+  }
+
+  .coffee-magazine .offer .text-container button {
+    padding: 3.242vw;
+  }
+
+  .coffee-magazine .image-container {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  .coffee-magazine .image-container .big-pic {
+    height: 77.333vw;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .coffee-magazine .image-container .small-pic {
+    gap: 0;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .coffee-magazine .image-container .first-small,
+  .coffee-magazine .image-container .sec-small {
+    height: 44.533vw;
+    width: 50%;
+    object-fit: cover;
+  }
+
+  /* coffee magazine */
+
+  /* parallex */
+  .sc-parallax {
+    margin-top: 12.8vw;
+    margin-bottom: 12.8vw;
+  }
+
+  .sc-parallax .reveal {
+    height: 90.667vw;
+  }
+
+  /* parallex */
+
+  /* articles */
+  .article-container .title {
+    padding: 12.8vw 0;
+    margin-bottom: 8.534vw;
+    width: 40.533vw;
+  }
+
+  .article-container .articles {
+    gap: 6.4vw;
+    justify-content: unset;
+    width: 100%;
+    transform: translateY(13.333vw);
+  }
+
+  .first-article,
+  .second-article,
+  .third-article {
+    width: 100%;
+  }
+
+  .readmore-container img {
+    height: 80.001vw;
+    width: 100%;
+  }
+
+  .read-more {
+    width: 66.666vw;
+    height: 13.333vw;
+    font-size: 4.267vw;
+    letter-spacing: 0.533vw;
+  }
+
+  .article-container .article-title {
+    font-size: 6.4vw;
+    padding: 3.201vw 0;
+    text-align: left;
+  }
+
+  .article-container .sub-title {
+    padding-bottom: 3.201vw;
+  }
+
+  /* articles */
+
+  /* subscribe */
+  .subscribe {
+    margin-top: 21.334vw;
+    transform: translateY(13.333vw);
+  }
+
+  .subscribe .title {
+    width: 38.667vw;
+  }
+
+  .subscribe .l-inner {
+    padding: 17.066vw 0;
+  }
+
+  .subscribe p {
+    font-size: 8.8vw;
+    padding: 6.666vw 0;
+  }
+
+  .subscribe #email-input {
+    width: 90%;
+    height: 13.066vw;
+  }
+
+  .subscribe #sub-btn {
+    padding: 4.266vw;
+    margin-top: 4.267vw;
+  }
+
+  .thank-you p {
+    font-size: 4.266vw;
+    letter-spacing: 0.668vw;
+  }
+
+  /* subscribe */
+
+  /* footer */
+  footer {
+    padding: 16vw 0;
+    gap: 0;
+  }
+
+  footer .l-inner {
+    flex-wrap: wrap;
+    gap: 8vw;
+  }
+
+  footer .foot-links {
+    gap: 6.667vw;
+  }
+
+  footer .menu,
+  footer .follow-us,
+  footer .contact-info {
+    gap: 1.599vw;
+  }
+
+  footer .heading {
+    font-size: 5.333vw;
+    padding-bottom: 1.867vw;
+  }
+
+  footer a {
+    font-size: 3.733vw;
+  }
+
   /* footer */
 }
