@@ -1128,14 +1128,8 @@ footer a:hover {
 
   /* parallex */
   .sc-parallax {
-    margin-top: 12.8vw;
-    margin-bottom: 12.8vw;
+    display: none;
   }
-
-  .sc-parallax .reveal {
-    height: 90.667vw;
-  }
-
   /* parallex */
 
   /* articles */
