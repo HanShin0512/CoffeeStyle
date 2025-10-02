@@ -544,6 +544,7 @@ nav a:hover {
 .subscribe #sub-btn {
   background-color: white;
   color: #000000;
+  font-weight: 400;
   padding: 16px;
   border: none;
 }
